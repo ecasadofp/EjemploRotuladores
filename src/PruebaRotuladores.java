@@ -1,12 +1,24 @@
-public class PruebaRotuladores {
+public class Rotulador implements Comparable<Rotulador>{
 
-    public static void main(String[] args) {
+    private String marca;
+    private String color;
+    private int peso;
 
-        Rotuladores misRotuladores = new Rotuladores();
+    public Rotulador(String marca, String color, int peso){
+        this.marca = marca;
+        this.color = color;
+        this.peso = peso;
+    }
 
-        misRotuladores.addRotulador(new Rotulador("Staedler", "Azul",193));
-        misRotuladores.addRotulador(new Rotulador("Bic", "Azul",113));
-        misRotuladores.addRotulador(new Rotulador("Alpino", "Rojo",33));
 
+    @Override
+    public int compareTo(Rotulador o) {
+       return this.peso-o.peso;
+    }
+
+    @Override
+    public String toString(){
+
+        return String.format("Color: %s, peso: %d, %s\n", color,peso, marca);
     }
 }
