@@ -1,17 +1,23 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.TreeSet;
 
 public class Rotuladores {
 //Subido a git hub
-    private TreeSet<Rotulador> rotuladores;
+    private ArrayList<Rotulador> rotuladores;
 
     public Rotuladores(){
-        rotuladores = new TreeSet<>();
+        rotuladores = new ArrayList<>();
     }
 
     public void addRotulador(Rotulador r){
 
         rotuladores.add(r);
 
+    }
+
+    public void ordenaRotuladores(){
+        Collections.sort(rotuladores);
     }
 
     @Override
