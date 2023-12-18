@@ -8,5 +8,11 @@ public class PruebaRotuladores {
         misRotuladores.addRotulador(new Rotulador("Bic", "Azul",113));
         misRotuladores.addRotulador(new Rotulador("Alpino", "Rojo",33));
 
+        System.out.println(misRotuladores);
+
+        misRotuladores.addRotulador(new Rotulador("Staedler", "Verde",33));
+        misRotuladores.addRotulador(new Rotulador("Staedler", "Negro",223));
+
+        System.out.println(misRotuladores);
     }
 }

@@ -14,7 +14,7 @@ public class Rotulador implements Comparable<Rotulador>{
 
     @Override
     public int compareTo(Rotulador o) {
-        return this.peso-o.peso;
+       return this.peso-o.peso;
     }
 
     @Override
